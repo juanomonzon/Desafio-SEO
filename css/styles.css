@@ -1,189 +1,128 @@
+/*variables*/
+/* colores*/
+/* spacings*/
+/*font family*/
+/* font-size*/
+/*normalizadores*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-}
+html {
+  font-size: 100%;
+  height: 90%; }
 
 body {
+  font-family: "Barlow", san-serif;
+  height: 80%;
+  display: inline-block;
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 20px;
+  padding: 10px; }
 
-   
-    float: center;
-    margin: 1rem;
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
 
-}
+.contactobody {
+  width: 100%;
+  background-color: burlywood; }
 
-#menu_bio {
-    float: left;
-    width: 70%;
-}
+.indexbody {
+  width: 100%;
+  background-color: burlywood;
+  text-decoration: none; }
 
+.portfoliobody {
+  width: 100%;
+  background-color: burlywood; }
 
-.menuSuperior {
-    list-style-type: none;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding:2rem;
-}
+.proyectobody {
+  width: 100%;
+  background-color: burlywood; }
 
-.menuSuperior li {
-    display: inline-block;
-    padding: 3px;
-    margin: 6px;
-}
+.trabajos_analogicos {
+  width: 100%;
+  background-color: burlywood; }
 
+ul {
+  list-style-type: none; }
 
- 
+a {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  color: #fbf7f7; }
 
+.titulo {
+  text-decoration: none;
+  color: white; }
 
-
-p {
-    color: rgb(6, 6, 6);
-}
-
-.menuSuperior a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    font-weight: 600;
-    margin: 5px;
-    padding: 1px;
-
-}
-
-
-
-
-
-#textoBlanco {
-    background-color: rgb(181, 198, 210);
-    float: center;
-    text-align: center;
-    margin: 10px;
-    font-style: italic;
-    font-weight: 600;
-    
-
-}
-
-
-header {
-    background-color: #708181;
-    text-align: center;
-    border-bottom: 3px;
-    margin: 30px;
-}
-
-
-.fondoGris {
-    background-color: cadetblue;
-    padding: 20px;
-}
-
-
-nav {
-    height: 100px;
-    border-bottom: 3px solid;
-    color: black;
-    margin: 100%;
-
-
-}
+.titulo_p {
+  text-decoration: none; }
 
 .blanco {
-    color: white (248, 248, 255);
-}
+  background-color: #98c6b7;
+  align-items: center;
+  margin: 1rem; }
 
-footer {
-    background-color: #708181;
-}
+.imgig {
+  width: 20px; }
 
-#fotoig {
-    width: 2%;
-}
+.imgfl {
+  width: 20px; }
 
-#flickr {
-    width: 2%;
-}
-
-#fotoperfil {
-    border-image-width: 580px;
-    height: 460px;
-}
-
-#textoBio {
-    text-align: right;
-
-
-
-}
-
-aside {
-    float: right;
-    width: 20%;
-    font-weight: 300;
-    /* formato galeria*/
-}
-
+.imagenmuseo {
+  width: 450px;
+  height: 285px; }
 
 .cards {
-    display: grid;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+  padding: 30px; }
 
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    margin: 20px;
-    align-items: center;
-}
+.galeriademuseo {
+  padding: 20px;
+  margin: 30px; }
 
-@media screen and (min-width: 376px) {
-    .menuSuperior  {
-        padding: 2px;
-        align-content: center;
-     
+.museoreflejo {
+  padding: 5px; }
 
-    
+.carousel {
+  margin: 50px;
+  padding: 50px;
+  height: 680px; }
 
-    grid-template-columns: repeat(auto-fill, minmax(100rem, 1fr));
-    margin: 20px;
-    align-items: center;
+.footer {
+  margin: 10px;
+  background-color: aquamarine;
+  align-content: center;
+  text-align: center;
+  font-weight: 600; }
 
-    }
-}
+@media (max-widht: 600px) {
+  .navigation {
+    flex-direction: column; } }
 
+/*mixins*/
+/*header*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 2px white;
+  margin-top: 20px;
+  text-decoration-color: #fffcfc;
+  background-color: #131313; }
 
-@media screen and (max-width: 400px){
-  
-  
-    .fotomuseo{
-width: 350px;
-height: 400px;
-    }
-} 
-
- 
-@media screen and (min-width:600px){
-    .menuSuperior{
-        display: flex;
-    flex-direction: column;
-    
-    }
-}
-
-@media screen and (min-width:360px){
-    .p{
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-font-size:small;
-  
-}
-
-}
-
-
-
-
-
-
+.menu_link {
+  font-size: 2.2em;
+  padding: 1rem;
+  text-decoration: none;
+  color: white; }

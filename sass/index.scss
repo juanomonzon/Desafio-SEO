@@ -1,113 +1,12 @@
+/*variables*/
+@import './misc/variables';
 
 
-* {
-	margin: 0;
-	padding: 0;
-}
-body {
-	float: center;
-	margin: 1rem;
-}
-#menu_bio {
-	float: left;
-	width: 70%;
-}
-.menuSuperior {
-	list-style-type: none;
-	text-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 2rem;
-	li {
-		display: inline-block;
-		padding: 3px;
-		margin: 6px;
-	}
-	a {
-		text-decoration: none;
-		text-transform: uppercase;
-		background-color: black;
-		color: white;
-		padding: 1rem;
-		font-weight: 600;
-		margin: 5px;
-		padding: 1px;
-	}
-}
-p {
-	color: rgb(6, 6, 6);
-}
-#textoBlanco {
-	background-color: rgb(181, 198, 210);
-	float: center;
-	text-align: center;
-	margin: 10px;
-	font-style: italic;
-	font-weight: 600;
-}
-header {
-	background-color:#708181;
-	text-align: center;
-	border-bottom: 3px;
-	margin: 30px;
-}
-.fondoGris {
-	background-color: cadetblue;
-	padding: 20px;
-}
-nav {
-	height: 100px;
-	border-bottom: 3px solid;
-	color: black;
-	margin: 100%;
-}
-.blanco {
-	color: white (248, 248, 255);
-}
-footer {
-    background-color:#708181;
-    
-}
-#fotoig {
-	width: 2%;
-}
-#flickr {
-	width: 2%;
-}
-#fotoperfil {
-	border-image-width: 580px;
-	height: 460px;
-}
-#textoBio {
-	text-align: right;
-}
-aside {
-	float: right;
-	width: 20%;
-	font-weight: 300;
-}
-.cards {
-	display: grid;
-	gap: 2rem;
-	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-	margin: 20px;
-	align-items: center;
-}
-@media screen and (min-width: 376px) {
-	header{padding:2px;
-	align-content: center;
-	grid-template-columns: repeat(auto-fill, minmax(100rem, 1fr));
-	margin:20px;
-	align-items: center;
-}
-}
-@media screen and (max-width: 400px) {
-	#fotomuseo{width:350px;
-	height: 400px;
-}
-}
-@media screen and (min-width:600px) {
-	.cards{display: flex;
-	flex-direction: column;
-}
-}
+/*normalizadores*/
+@import './misc/normalize';
+
+/*mixins*/
+@import './misc/mixins';
+
+/*header*/
+@import './partials/header';

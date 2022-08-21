@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+
+}
+html{
+    font-size: 100%;
+    height: 90%;
+
+
+}
+body{
+
+    font-family: $font-principal;
+    height: 80%;
+    display:inline-block;
+overflow-x: hidden;
+max-width: 100%;
+margin: 20px;
+padding: 10px;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contactobody{
+    width: 100%;
+    background-color:burlywood;
+    
+
+}
+.indexbody{
+    width: 100%;
+    background-color:burlywood;
+    text-decoration: none;
+}
+.portfoliobody{
+    width: 100%;
+    background-color:burlywood;
+}
+.proyectobody{
+    width: 100%;
+    background-color:burlywood;
+}
+.trabajos_analogicos{
+    width: 100%;
+    background-color:burlywood;
+}
+
+
+ul{
+    list-style-type:none;
+   
+    
+}
+a{
+    text-decoration: none;
+    font-family: $font-title-;
+    color: $secundarycolor;
+}
+
+.titulo{
+    text-decoration:none;
+    color: white;
+}
+.titulo_p{
+    text-decoration: none;
+    
+}
+.blanco{
+    background-color:rgb(152, 198, 183);
+    align-items: center;
+    margin: 1rem;
+}
+.imgig{
+    width: 20px;
+}
+.imgfl{
+    width: 20px;
+}
+.imagenmuseo{
+    width:450px;
+    height: 285px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    padding: 30px;
+}
+.galeriademuseo{
+   padding: 20px;
+   margin: 30px;
+}
+.museoreflejo{
+    padding: 5px;
+}
+.carousel{
+    margin: 50px;
+    padding: 50px;
+    height: 680px;
+    
+    
+ 
+}
+
+.footer{
+ margin: 10px;
+background-color:aquamarine;
+align-content: center;
+text-align: center;
+font-weight: 600;
+}
+
+@media ( max-widht : 600px){
+.navigation{
+    flex-direction: column;
+}
+}
