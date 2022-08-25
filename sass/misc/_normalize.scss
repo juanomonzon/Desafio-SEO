@@ -1,128 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Roboto:wght@100&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    
+    box-sizing: border-box;
+
 
 }
-html{
+/*propiedades del html*/
+html {
     font-size: 100%;
-    height: 90%;
-
+    width: 100%;
 
 }
-body{
+/*propiedades de todos los index*/
+body {
+    width: 100%;
 
-    font-family: $font-principal;
-    height: 80%;
-    display:inline-block;
-overflow-x: hidden;
-max-width: 100%;
-margin: 20px;
-padding: 10px;
+}
+.body_index{
+    background-color: $alternative2;
+
+}
+.body_analogico{
+    background-color: $alternative2;
+}
+.body_museo{
+    background-color: $alternative2;
+
+}
+.body_portfolio{
+    background-color: $alternative2;
+}
+.body_contacto{
+    background-color: $alternative2;
+
 }
 
-.navigation{
+/*propiedades del nav*/
+.navigation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.contactobody{
-    width: 100%;
-    background-color:burlywood;
-    
-
-}
-.indexbody{
-    width: 100%;
-    background-color:burlywood;
-    text-decoration: none;
-}
-.portfoliobody{
-    width: 100%;
-    background-color:burlywood;
-}
-.proyectobody{
-    width: 100%;
-    background-color:burlywood;
-}
-.trabajos_analogicos{
-    width: 100%;
-    background-color:burlywood;
-}
+ul {
+    list-style-type: none;
 
 
-ul{
-    list-style-type:none;
-   
-    
 }
-a{
+
+a {
     text-decoration: none;
     font-family: $font-title-;
     color: $secundarycolor;
 }
 
-.titulo{
-    text-decoration:none;
+.titulo {
+    text-decoration: none;
     color: white;
 }
-.titulo_p{
+
+.titulo_p {
     text-decoration: none;
-    
+
 }
-.blanco{
-    background-color:rgb(152, 198, 183);
+
+.blanco {
+    background-color: rgb(152, 198, 183);
     align-items: center;
     margin: 1rem;
 }
-.imgig{
+/*iconos del footer*/
+.imgig {
     width: 20px;
-}
-.imgfl{
-    width: 20px;
-}
-.imagenmuseo{
-    width:450px;
-    height: 285px;
 }
 
-.cards{
+.imgfl {
+    width: 20px;
+}
+
+.fotomuseo {
+    width: 100%;
+}
+/*fotos del html Proyecto Museo*/
+.galeriademuseo {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px;
-    padding: 30px;
+    margin: 20px;
+
+    
 }
-.galeriademuseo{
-   padding: 20px;
-   margin: 30px;
+
+img {
+    width: 100%
 }
-.museoreflejo{
-    padding: 5px;
+/*propiedades de fotos y tarjetas del index Portfolio*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 50px;
+    padding: 90px;
 }
-.carousel{
+/*propiedades del carrusel del index Trabajos Analógicos*/
+.carousel {
     margin: 50px;
     padding: 50px;
-    height: 680px;
-    
-    
  
+
+
+
+}
+/*propiedades del Footer*/
+.footer {
+    margin: 10px;
+    background-color: aquamarine;
+    align-content: center;
+    text-align: center;
+    font-weight: 600;
 }
 
-.footer{
- margin: 10px;
-background-color:aquamarine;
-align-content: center;
-text-align: center;
-font-weight: 600;
+/*responsive*/
+@media (max-width: 440px) {
+    .navigation {
+        flex-direction: column;
+    }
 }
 
-@media ( max-widht : 600px){
-.navigation{
-    flex-direction: column;
-}
+@media (min-width: 440px) {
+    body {
+        width: 100%;
+
+    }
 }
