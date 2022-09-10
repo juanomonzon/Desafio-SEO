@@ -93,26 +93,41 @@ a {
 }
 
 img {
-    width: 100%
+    width: 90%
 }
 /*propiedades de fotos y tarjetas del index Portfolio*/
 .cards {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: space-around;
     width: 100%;
     margin: 10px;
    
 }
+.card1{
+   margin: $margin;
+}
+.card2{
+    margin: $margin;
+ }
+ .card3{
+    margin: $margin;
+ }
+ .card4{
+    margin: $margin;
+    align-content: center;
+ }
+ .card5{
+    margin: $margin;
+    align-content: center;
+flex-wrap: wrap;}
+
 /*propiedades del carrusel del index Trabajos Analógicos*/
 .carousel {
     margin: 50px;
     padding: 50px;
+ }
  
-
-
-
-}
 /*propiedades del Footer*/
 .footer {
     margin: 10px;
@@ -135,16 +150,18 @@ img {
 
     }
 }
-@media (max-width: 810px){
+@media (max-width: 679px){
     .cards{
-        flex-direction: row;
-        width: 70%;
+        flex-direction: column;
+        width: 100%;
+        
         
     }}
 @media (max-width: 440px) {
     .cards{
-        flex-direction: row;
-        width: 70%;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
         
     }
 }
