@@ -100,8 +100,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin: 50px;
-    padding: 90px;
+    width: 100%;
+    margin: 10px;
+   
 }
 /*propiedades del carrusel del index Trabajos Analógicos*/
 .carousel {
@@ -132,5 +133,18 @@ img {
     body {
         width: 100%;
 
+    }
+}
+@media (max-width: 810px){
+    .cards{
+        flex-direction: row;
+        width: 70%;
+        
+    }}
+@media (max-width: 440px) {
+    .cards{
+        flex-direction: row;
+        width: 70%;
+        
     }
 }
